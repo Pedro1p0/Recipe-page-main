@@ -60,38 +60,50 @@
         width: 656px;
         height: 300px;
         border-radius: 20px;
-        margin-top: 40px;
+        margin-bottom: 15px;
       }
       main > h1 {
         font-family: var(--font-serif);
+        color: black;
         font-size: 2.5em;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
       }
       main > h2 {
         font-size: 1em;
         font-weight: normal;
+        margin-top: 5px;
       }
       .preparation-time {
         background-color: var(--rose-white);
         border-radius: 20px;
-        padding: 1px;
       }
       .preparation-time > h3 {
+        padding-top: 15px;
+        margin-left: 40px;
+        margin-bottom: 10px;
         color: var(--dark-raspberry);
+      }
+      .preparation-time > ul {
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 15px;
+      }
+      .preparation-time > ul > li {
+        margin-top: 0px;
+        padding: 0px;
+        margin-left: 40px;
+        margin-bottom: 15px;
       }
       .preparation-time > ul > li::marker {
         color: var(--dark-raspberry);
       }
       .preparation-time > ul > li > strong {
         margin: 0;
+        margin-left: 20px;
         font-weight: bold;
-        color: black;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: var(--wenge-brown);
       }
       .Ingredients {
         margin: 0;
@@ -107,6 +119,105 @@
       }
       .Ingredients > ul > li::marker {
         color: var(--nutmeg);
+      }
+      hr {
+        border-style: solid;
+        border-color: var(--light-grey);
+        margin-bottom: 30px;
+      }
+      .Instructions {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .Instructions h3 {
+        color: var(--nutmeg);
+        font-family: var(--font-serif);
+        font-size: 2em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .Instructions ul {
+        margin-left: 40px;
+        margin-top: 10px;
+      }
+      .Instructions > ul > li {
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style-type: decimal;
+        font-weight: bold;
+      }
+      .Instructions > ul > li > p {
+        margin: 0;
+        margin-left: 15px;
+        font-weight: normal;
+        font-size: 15px;
+      }
+      .Instructions > ul > li > p > strong {
+        margin: 0;
+        font-weight: bold;
+        color: var(--wenge-brown);
+      }
+      .Instructions > ul > li::marker {
+        color: var(--nutmeg);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .Nutrition {
+        margin: 0;
+      }
+      .Nutrition h3 {
+        color: var(--nutmeg);
+        font-family: var(--font-serif);
+        font-size: 2em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .Nutrition p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .Nutrition table {
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+
+      .Nutrition > ul {
+        margin-top: 10;
+        margin-bottom: 0;
+        margin-left: 0px;
+        align-content: space-between;
+      }
+      .Nutrition > ul > li {
+        margin-left: -10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style-type: none;
+        font-weight: bold;
+      }
+      .nutrition-item > strong {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 200px;
+      }
+      .nutrition-item > span {
+        text-align: center;
+      }
+
+      .nutrition-item {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .Nutrition > ul > hr {
+        border-style: solid;
+        border-color: var(--light-grey);
+        margin: 15px 0px 10px 40px;
       }
     </style>
   </head>
@@ -140,68 +251,96 @@
           </li>
         </ul>
       </div>
-      <h3>Instructions</h3>
+      <hr />
+      <div class="Instructions">
+        <h3>Instructions</h3>
+        <ul>
+          <li>
+            <p>
+              <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+              pinch of salt and pepper until they are well mixed. You can add a
+              tablespoon of water or milk for a fluffier texture.
+            </p>
+          </li>
 
-      <ul>
-        <li>
-          Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-          pepper until they are well mixed. You can add a tablespoon of water or
-          milk for a fluffier texture.
-        </li>
+          <li>
+            <p>
+              <strong>Heat the pan:</strong> Place a non-stick frying pan over
+              medium heat and add butter or oil.
+            </p>
+          </li>
 
-        <li>
-          Heat the pan: Place a non-stick frying pan over medium heat and add
-          butter or oil.
-        </li>
+          <li>
+            <p>
+              <strong>Cook the omelette:</strong> Once the butter is melted and
+              bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+              coat the surface.
+            </p>
+          </li>
 
-        <li>
-          Cook the omelette: Once the butter is melted and bubbling, pour in the
-          eggs. Tilt the pan to ensure the eggs evenly coat the surface.
-        </li>
+          <li>
+            <p>
+              <strong>Add fillings (optional):</strong> When the eggs begin to
+              set at the edges but are still slightly runny in the middle,
+              sprinkle your chosen fillings over one half of the omelette.
+            </p>
+          </li>
 
-        <li>
-          Add fillings (optional): When the eggs begin to set at the edges but
-          are still slightly runny in the middle, sprinkle your chosen fillings
-          over one half of the omelette.
-        </li>
+          <li>
+            <p>
+              <strong>Fold and serve:</strong> As the omelette continues to
+              cook, carefully lift one edge and fold it over the fillings. Let
+              it cook for another minute, then slide it onto a plate.
+            </p>
+          </li>
 
-        <li>
-          Fold and serve: As the omelette continues to cook, carefully lift one
-          edge and fold it over the fillings. Let it cook for another minute,
-          then slide it onto a plate.
-        </li>
+          <li>
+            <p>
+              <strong>Enjoy:</strong> Serve hot, with additional salt and pepper
+              if needed.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="Nutrition">
+        <h3>Nutrition</h3>
+        <p>
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
 
-        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
-      </ul>
+        <ul class="nutrition-list">
+          <li>
+            <div class="nutrition-item">
+              <strong>Calories:</strong>
+              <span>277kcal</span>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <div class="nutrition-item">
+              <strong>Carbs:</strong>
+              <span>0g</span>
+            </div>
+          </li>
+          <hr />
+          <li>
+            <div class="nutrition-item">
+              <strong>Protein:</strong>
+              <span>20g</span>
+            </div>
+          </li>
+          <hr />
 
-      <h3>Nutrition</h3>
-
-      <p>
-        The table below shows nutritional values per serving without the
-        additional fillings.
-      </p>
-
-      <table>
-        <tr>
-          <th>Calories</th>
-          <td>277kcal</td>
-        </tr>
-
-        <tr>
-          <th>Carbs</th>
-          <td>0g</td>
-        </tr>
-
-        <tr>
-          <th>Protein</th>
-          <td>20g</td>
-        </tr>
-
-        <tr>
-          <th>Fat</th>
-          <td>22g</td>
-        </tr>
-      </table>
+          <li>
+            <div class="nutrition-item">
+              <strong>Fat:</strong>
+              <span>22g</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer>
