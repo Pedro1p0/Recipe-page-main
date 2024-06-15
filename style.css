@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --font-serif: "Young Serif", serif;
+  --font-sans-serif: "Outfit", sans-serif;
+  background-color: var(--eggshell);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-sans-serif);
+  color: var(--wenge-brown);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: var(--white);
+  width: 736px;
+  height: 1800px;
+  margin: auto;
+  margin-top: 123px;
+  margin-bottom: 123px;
+  border-radius: 20px;
+}
+main * {
+  margin: 40px;
+}
+
+main > img {
+  width: 656px;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+main > h1 {
+  font-family: var(--font-serif);
+  color: black;
+  font-size: 2.5em;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+main > h2 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 5px;
+}
+.preparation-time {
+  background-color: var(--rose-white);
+  border-radius: 20px;
+}
+.preparation-time > h3 {
+  padding-top: 15px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  color: var(--dark-raspberry);
+}
+.preparation-time > ul {
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 15px;
+}
+.preparation-time > ul > li {
+  margin-top: 0px;
+  padding: 0px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+.preparation-time > ul > li::marker {
+  color: var(--dark-raspberry);
+}
+.preparation-time > ul > li > strong {
+  margin: 0;
+  margin-left: 20px;
+  font-weight: bold;
+  color: var(--wenge-brown);
+}
+.Ingredients {
+  margin: 0;
+}
+.Ingredients > h3 {
+  color: var(--nutmeg);
+  font-family: var(--font-serif);
+  font-size: 2em;
+  font-weight: normal;
+}
+.Ingredients > ul > li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.Ingredients > ul > li::marker {
+  color: var(--nutmeg);
+}
+hr {
+  border-style: solid;
+  border-color: var(--light-grey);
+  margin-bottom: 30px;
+}
+.Instructions {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.Instructions h3 {
+  color: var(--nutmeg);
+  font-family: var(--font-serif);
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.Instructions ul {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.Instructions > ul > li {
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: decimal;
+  font-weight: bold;
+}
+.Instructions > ul > li > p {
+  margin: 0;
+  margin-left: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+.Instructions > ul > li > p > strong {
+  margin: 0;
+  font-weight: bold;
+  color: var(--wenge-brown);
+}
+.Instructions > ul > li::marker {
+  color: var(--nutmeg);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.Nutrition {
+  margin: 0;
+}
+.Nutrition h3 {
+  color: var(--nutmeg);
+  font-family: var(--font-serif);
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.Nutrition p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.Nutrition ul {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+.Nutrition li {
+  display: flex;
+  justify-content: space-between;
+  padding:0;
+  align-items: center;
+  margin: 0;
+}
+.nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0px 15px 30px;
+}
+.nutrition-item strong {
+  flex: 1;
+  text-align: left;
+  margin: 0;
+  font-weight: normal;
+  color: var(--wenge-brown);
+}
+.nutrition-item span {
+  flex: 1;
+  text-align: left;
+  margin: 0;
+  color: var(--nutmeg);
+  font-weight: bold;
+}
+.Nutrition hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid var(--light-grey);
+  margin: 0;
+}
