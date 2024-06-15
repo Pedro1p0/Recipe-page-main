@@ -183,41 +183,44 @@
         margin-top: 0;
         margin-bottom: 0;
       }
-      .Nutrition table {
+      .Nutrition ul {
         margin-top: 20px;
-        margin-bottom: 5px;
-      }
-
-      .Nutrition > ul {
-        margin-top: 10;
         margin-bottom: 0;
-        margin-left: 0px;
-        align-content: space-between;
+        padding: 0;
+        list-style: none;
       }
-      .Nutrition > ul > li {
-        margin-left: -10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        list-style-type: none;
+      .Nutrition li {
+        display: flex;
+        justify-content: space-between;
+        padding:0;
+        align-items: center;
+        margin: 0;
+      }
+      .nutrition-item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 15px 0px 15px 30px;
+      }
+      .nutrition-item strong {
+        flex: 1;
+        text-align: left;
+        margin: 0;
+        font-weight: normal;
+        color: var(--wenge-brown);
+      }
+      .nutrition-item span {
+        flex: 1;
+        text-align: left;
+        margin: 0;
+        color: var(--nutmeg);
         font-weight: bold;
       }
-      .nutrition-item > strong {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: 200px;
-      }
-      .nutrition-item > span {
-        text-align: center;
-      }
-
-      .nutrition-item {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .Nutrition > ul > hr {
-        border-style: solid;
-        border-color: var(--light-grey);
-        margin: 15px 0px 10px 40px;
+      .Nutrition hr {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid var(--light-grey);
+        margin: 0;
       }
     </style>
   </head>
